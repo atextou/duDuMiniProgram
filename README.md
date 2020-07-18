@@ -1,21 +1,33 @@
 # duDuMiniProgram
 个人应用型小程序，主要功能为天气查询，翻译，查词，视频播放。
 
-## pages/index
+## template
+封装了picker组件，便于翻译页面使用
+
+## pages
+各页面存放文件夹
+
+### pages/index
 授权页面（默认起始页面）
 
-## pages/direction
+### pages/direction
 打开小程序授权登录跳转后的导航页面
 
-## pages/videoPlay
+### pages/videoPlay
 视频播放页面（点击导航页面第一个方块跳转）
 
-## pages/weather
+### pages/weather
 天气查询页面（点击导航页面左上角天气图标跳转）
+1，picker获取用户选取的地区数据
+2，将数据发送至和风天气API获取该地区天气信息
+3，在成功回调中接收返回值并将相关数据渲染到页面。
 
-## pages/wordTranslate
+### pages/wordTranslate
 翻译页面（点击导航页面工具方块跳转）
+1，用户可通过picker选取翻译源语种及目标语种，输入要翻译的内容，获取用户选取的语种以及输入的内容，将其作为参数传递至百度翻译API，成功回调中获取返回结果。
+2，用户无选择语言，默认源语言自动检测，目标语言为中文。
+3，用户无输入时，翻译按钮为禁用状态。
 
-## pages/dictionary
+### pages/dictionary
 查单词页面（点击导航页面工具方块，跳转至翻译页面后，可根据顶部导航栏进行切换）
 
