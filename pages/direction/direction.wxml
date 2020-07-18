@@ -1,0 +1,6 @@
+<!--pages/direction/direction.wxml-->
+<image src="../../images/103.png" bindtap="goWeather"></image>
+<view class="view">
+  <view class="dir-view video" bindtap="goVideo">嘟嘟视频</view>
+  <view class="dir-view tool" bindtap="goTrans">嘟嘟工具</view>
+</view>

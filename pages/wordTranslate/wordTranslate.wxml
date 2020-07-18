@@ -1,0 +1,41 @@
+<!--pages/wordTranslate/wordTranslate.wxml-->
+<!-- 引入模板 -->
+<import src="../../template/langPicker"></import>
+<view class="dad">
+  <view>
+    <!-- 切换语言区域 -->
+  <view class="langType">
+    <view class="langSelecor">
+      <template is="langPickerLeft" data="{{lang,fromName}}"></template>
+      <van-icon name="arrow-down" size="14rpx" />
+    </view>
+    <van-icon class="exchangeArrow" name="exchange" />
+    <view class="langSelecor">
+      <template is="langPickerRight" data="{{lang,toName}}"></template>
+      <van-icon name="arrow-down" size="14rpx" />
+    </view>
+  </view>
+  <!-- 文本区 -->
+    <van-field
+      bind:input="getTransWords"
+      bind:confirm="goSearch" 
+      bind:focus="reInput"
+      value="{{ inputValue }}"
+      type="textarea"
+      placeholder="请输入内容"
+      autosize
+      focus
+      clearable
+      show-confirm-bar
+    />
+  <!-- 按钮 -->
+  <button class="btn" style="display:{{trans_result ? 'none' : 'block'}}" disabled="{{inputValue ? false : true}}" bindtap="goSearch">翻译</button>
+<!-- 翻译结果 -->
+<view class="trans-result">{{trans_result}}</view>
+
+
+  </view>
+<view class="home" >
+  <van-icon bindtap="goHome" size="3rem" color="#F6F4F0" name="wap-home" />
+</view>
+</view>

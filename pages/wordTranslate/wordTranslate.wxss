@@ -1,0 +1,56 @@
+/* pages/wordTranslate/wordTranslate.wxss */
+/* 引入模板样式文件 */
+@import '../../template/landPicker.wxss';
+.dad {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* 切换语言区域整体样式 */
+.langType {
+  padding: 10rpx;
+  margin: 0 20rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* 左右选择器样式 */
+.langSelecor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300rpx;
+  flex-grow: 1;
+}
+
+/* 文本区域样式 */
+textarea {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  margin: 0 auto;
+  width: 95%;
+  padding: 20rpx;
+  border-top: 1rpx solid #ececec;
+  border-bottom: 1rpx solid #ececec;
+  font-size: 32rpx;
+  font-weight: 300;
+}
+/* 翻译按钮样式 */
+.btn {
+  margin: 10rpx;
+}
+/* 翻译结果 */
+.trans-result {
+  height: auto;
+  padding: 20rpx 32rpx;
+  font-weight: 300;
+}
+.home {
+  align-self: flex-end;
+  margin-right: 30rpx;
+  margin-bottom: 50rpx;
+}

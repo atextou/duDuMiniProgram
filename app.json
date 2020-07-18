@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/direction/direction",
+    "pages/dictionary/dictionary",
+    "pages/wordTranslate/wordTranslate",
+    "pages/videoPlay/videoPlay",
+    "pages/weather/weather"
+    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "嘟嘟",
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#e7e5df",
+    "list": [
+      {
+        "pagePath": "pages/wordTranslate/wordTranslate",
+        "text": "翻译"
+      },
+      {
+        "pagePath": "pages/dictionary/dictionary",
+        "text": "词典"
+      }
+    ],
+    "position": "top"
+  }
+}

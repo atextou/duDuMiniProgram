@@ -1,0 +1,5 @@
+/* 修改vant搜索框默认样式 */
+.van-search__content {
+  background-color: #F6F4F0 !important;
+  background-color: var(--search-background-color,#F6F4F0) !important; 
+  }

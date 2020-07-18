@@ -1,0 +1,10 @@
+<!--pages/index/index.wxml-->
+<view class="login-index">
+  <!-- 头像区域 -->
+  <!-- 根据用户信息列表的头像属性值是否为空进行判断 -->
+  <image class="login-avator" src="{{userInfo.avatarUrl ? userInfo.avatarUrl : defaultAvatarUrl}}"></image>
+  <!-- 默认显示语&&用户昵称 -->
+  <text class="welcome-word">Hi~{{userInfo.nickName}}</text>
+  <!-- 授权按钮 -->
+  <button style="display: {{isShow ? 'block' : 'none'}}" class="get-user-button" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+</view>

@@ -1,0 +1,58 @@
+/* pages/weather/weather.wxss */
+/* 页面总体样式 */
+.weatherPage {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(#fff,rgb(188, 237, 252),rgb(147, 209, 245),rgb(101, 162, 243),#4372b1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+/* 地区名字 */
+.regionName {
+  font-size: 40rpx;
+  color: #4A7BBE;
+  font-weight: 600;
+}
+/* 度数 */
+.temperature {
+  font-size: 84rpx;
+  color: #fff;
+  text-shadow: 4rpx 4rpx 4rpx gainsboro;
+}
+.statement {
+  color: #fff;
+}
+/* 图片 */
+.weatherImg {
+  width: 150rpx;
+  height: 150rpx;
+}
+/* 指标 indicator 整体样式 */
+.indicator {
+  height: 50vh;
+  color: #fff;
+  text-align: center;
+}
+/* 指标文本样式 */
+.indicator-name{
+  font-size: 28rpx;
+}
+.indicator-val {
+  font-size: 32rpx;
+  margin-bottom: 20rpx;
+  font-weight: 600;
+}
+
+/* 除去vant组件原定样式 */
+.van-grid-item__content {
+  background-color: transparent !important; 
+}
+.van-hairline--surround:after {
+  border-width: 0 !important;
+}
+.van-hairline--top:after {
+  border: 0 !important;
+}
+  

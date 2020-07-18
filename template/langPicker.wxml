@@ -1,0 +1,11 @@
+<!--template/langPicker.wxml-->
+<template name="langPickerLeft">
+  <picker class="picker" mode="selector" range="{{lang}}" range-key="{{'name'}}" bindchange="langPickerLeftChange">
+    <view>{{fromName}}</view>
+  </picker>
+</template>
+<template name="langPickerRight">
+  <picker class="picker" mode="selector" range="{{lang}}" range-key="{{'name'}}" bindchange="langPickerRightChange">
+    <view>{{toName}}</view>
+  </picker>
+</template>

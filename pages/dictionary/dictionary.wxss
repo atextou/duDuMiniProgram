@@ -1,0 +1,25 @@
+/* pages/dictionary/dictionary.wxss */
+.dad {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* 搜索结果样式 */
+.search-result {
+  margin: 20rpx;
+  padding: 10rpx;
+  font-size: 34rpx;
+  font-weight: 300;
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+}
+.result-num {
+  margin-right: 15rpx;
+}
+.home {
+  align-self: flex-end;
+  margin-right: 30rpx;
+  margin-bottom: 50rpx;
+}

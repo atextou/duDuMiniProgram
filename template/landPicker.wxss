@@ -1,0 +1,10 @@
+.picker {
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx;
+}
+.picker view {
+font-size: 32rpx;
+font-weight: 300;
+font-family: 'YouYuan';
+}

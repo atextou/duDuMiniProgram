@@ -1,0 +1,31 @@
+/* pages/index/index.wxss */
+/* 页面总体样式 */
+.login-index {
+  padding-top: 100rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+/* 头像样式 */
+.login-avator {
+  width: 300rpx;
+  height: 300rpx;
+  border: 1rpx solid gainsboro;
+  margin-bottom: 300rpx;
+}
+/* 欢迎语样式 */
+.welcome-word {
+  color: rgb(66, 60, 60);
+  font-size: 40rpx;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 50rpx;
+
+}
+/* 按钮样式 */
+.get-user-button {
+  width: 50%;
+  border: 1rpx solid silver;
+  border-radius: 15rpx;
+  text-align: center;
+}

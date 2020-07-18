@@ -1,0 +1,55 @@
+/* pages/videoPlay/videoPlay.wxss */
+video {
+  width: 100%;
+}
+.danmuArea {
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0 20rpx;
+}
+.danmuArea>input{
+ border-bottom: 1rpx solid peachpuff;
+ flex-grow: 1;
+ padding: 0 0 10rpx 10rpx;
+}
+.danmuArea button{
+  font-size: 30rpx;
+  color: rgb(81, 83, 87);
+  background-color: #ffdab9;
+  box-shadow: 5rpx 5rpx 5rpx gainsboro;
+}
+.list {
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.list-title {
+  width: 250rpx;
+  color: dimgray;
+  font-size: 32rpx;
+  text-align: center;
+  font-weight: 400;
+  margin: 10rpx auto;
+  padding: 10rpx 0;
+  border-bottom: 1rpx dashed gainsboro;
+}
+.list-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 60rpx;
+  margin: 20rpx 0;
+  border-bottom: 1rpx solid gainsboro;
+  padding-bottom: 10rpx;
+}
+.videoName{
+  margin: 0 20rpx;
+  font-size: 36rpx;
+}
+.videoRegion {
+  font-size: 30rpx;
+  color: rgb(155, 151, 151);
+}

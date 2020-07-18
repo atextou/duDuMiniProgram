@@ -1,0 +1,24 @@
+<!--pages/weather/weather.wxml-->
+<view class="weatherPage">
+  <!-- 地区选择 -->
+  <picker mode="region" bindchange="bindRegionChange" value="{{selectedRegion}}">
+    <view class="regionName">{{selectedRegion[0]}},{{selectedRegion[1]}},{{selectedRegion[2]}}</view>
+  </picker>
+  <!-- 采集时间注明 -->
+  <view class="statement">*数据采集于{{date}}  {{time}}</view>
+  <!-- 摄氏度显示 -->
+  <view class="temperature">{{now.temp}}°C {{now.text}}</view>
+  <!-- 图片显示 -->
+  <image wx:if="{{now.icon}}" class="weatherImg" src="/images/{{now.icon}}.png"></image>
+  <!-- 各项天气指标 -->
+  <view class="indicator">
+    <van-grid column-num="3">
+      <van-grid-item use-slot class="indicator-item" wx:for="{{indicator}}" wx:key="index" >
+        <text class="indicator-name">{{indicator[index].name}}</text>
+        <text class="indicator-val">{{indicator[index].val}}</text>
+      </van-grid-item>
+      
+    </van-grid>
+    
+  </view>
+</view>

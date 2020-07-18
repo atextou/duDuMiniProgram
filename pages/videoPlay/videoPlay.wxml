@@ -1,0 +1,17 @@
+<!--pages/videoPlay/videoPlay.wxml-->
+<video autoplay show-center-play-btn src="{{src}}" id="vdeo" controls danmu-btn enable-danmu></video>
+<view class="danmuArea">
+  <input bindinput="getDanmu" value="{{inputValue}}" placeholder="快来说些啥吧~"/>
+  <button bindtap="sendDanmu">发送弹幕</button>
+</view>
+<view class="list" >
+  <view class="list-title">预告片</view>
+  <view class="list-item" wx:for="{{videoList}}" wx:key="index" data-url="{{item.url}}" bindtap="playVideo">
+    <van-icon color="#ffdab9" name="video-o" size="64rpx"/>
+    <text class="videoName">{{item.name}}</text>
+    <text class="videoRegion">（{{item.region}}）</text>
+  </view>
+</view>
+
+
+
